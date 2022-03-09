@@ -82,4 +82,4 @@ wsServer.on('connection', (ws) => {
 
 // инициализируем прослушивание порта
 const port = process.env.PORT || 7070;
-server.listen(port);
+http.createServer(app.callback()).listen(port);
